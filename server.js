@@ -31,6 +31,10 @@ app.get('/signup', function(req,res){
 app.get('/signin', function(req,res){
 	res.render('index', { title: 'PhotoAw - signin' });
 });
+//ruta4
+app.get('/profile', function(req,res){
+	res.render('index', { title: 'Profile' });
+});
 //ruta de api con imagenes
 app.get('/api/pictures',function(req,res){
 	var pictures = [

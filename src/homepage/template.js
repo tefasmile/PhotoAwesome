@@ -5,7 +5,6 @@ var translate = require('../translate').message;
 var request = require('superagent');
 
 
- 
 module.exports = function (pictures){
 	var el = yo`<div class="container timeline">
 	<div class="row">
