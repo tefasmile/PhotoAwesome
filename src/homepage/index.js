@@ -7,7 +7,7 @@ var header = require('../header');
 var axios = require('axios');
 
 
-page('/',header, asyncLoad , function(ctx, next){
+page('/',header, asyncLoad, function(ctx, next){
 	title('PhotoAwesome');
     var main = document.getElementById('main-container');
 	
