@@ -1,7 +1,8 @@
 import yo from 'yo-yo';
 import layout from '../layout';
+import translate from '../translate';
 
-export default function userPageTemplate(user){
+module.exports =  function (user){
 		var templateProfile = yo`<div class="profile">
 		<div class="container">
 			<div class="row margin">
@@ -9,7 +10,7 @@ export default function userPageTemplate(user){
 					<img class="circle responsive-img" src="${user.avatar}">
 					<h2 class="flow-text hide-on-large-only center-align">${user.username}</h2>
 					<h2 class="hide-on-med-and-down left-align">${user.username}</h2>
-					<p class="leyend">Description user</p>
+					<p class="leyend">Description del usuario perfil</p>
 					<div class="text">
 						<p class="text__item">100 publicaciones</p>
 						<p class="text__item">5.350 seguidores</p>
@@ -20,13 +21,19 @@ export default function userPageTemplate(user){
 			</div>
 			<div class="row">
 				${user.pictures.map(function (picture){
-					return yo`<div class="picture">
-						<div class="ihover fade" href="#pageUrl">
-							<img src="${picture.src}" class="responsive-img"/>
-							<div class="iconos">
+					return yo`<div class="col s12 m6 l4">
+							<a href="/${user.username}/${picture.id}" class="picture-container">
+								<img src="${picture.src}" class="picture"/>
 								<div class="likes"><i class="fa fa-heart"></i>${picture.likes}</div>
+							</a>
+							<div id="modal${picture.id}" class="modal modal-fixed-footer">
+								<div class="modal-content">
+									<img src="${picture.src}"/>
+								</div>
+								<div class="modal-footer">
+									<div class="btn btn-flat likes"><i class="fa fa-heart"></i> ${translate('likes', { likes: picture.likes })}</div>
+								</div>
 							</div>
-						</div>
 					</div>`
 				})}
 			</div>

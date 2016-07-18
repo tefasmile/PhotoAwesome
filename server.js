@@ -61,10 +61,7 @@ app.get('/api/pictures',function(req,res){
 		}
 	];
 
-	//setTimeout(function (){
-		res.send(pictures);	
-	//},2000);
-	
+	setTimeout(() => res.send(pictures),2000);
 });
 //subir imagenes
 app.post('/api/pictures', function(req, res, next){
@@ -95,22 +92,22 @@ app.get('/api/user/:username',function(req,res){
 			},
 			{
 				id: 3,
-				src: 'http://www.rosacruzaurea.org/wp-content/uploads/2015/03/Naturaleza.jpg',
+				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/gtlbgxgmyox.jpg&h=250&w=250',
 				likes:23
 			},
 			{
 				id: 4,
-				src: 'http://juangarciafotografo.com/wp-content/uploads/2015/10/Martin-250x250.jpg',
+				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/gtlbgxgmyox.jpg&h=250&w=250',
 				likes:6
 			},
 			{
 				id: 5,
-				src: 'http://anikovillalba.com/wp-content/gallery/naturaleza/thumbs/thumbs_galeria-naturaleza-aniko-villalba-3.jpg',
+				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/o4epw33wyxr.jpg&h=250&w=250',
 				likes:2
 			},
 			{
 				id: 6,
-				src: 'http://pcs01.photocase.com/4/4nbswy2j/rzkmhryn/photocaserzkmhryn1.jpg',
+				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/o4epw33wyxr.jpg&h=250&w=250',
 				likes:0
 			}
 		]

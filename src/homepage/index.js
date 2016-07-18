@@ -7,12 +7,19 @@ var header = require('../header');
 var axios = require('axios');
 
 
-page('/',header, asyncLoad, function(ctx, next){
+page('/',header, loading, asyncLoad, function(ctx, next){
 	title('PhotoAwesome');
     var main = document.getElementById('main-container');
-	
 	empty(main).appendChild(template(ctx.pictures));
 });
+
+//spinner loading
+function loading(ctx, next){
+	var el = document.createElement('div');
+	el.classList.add('loader');
+	document.getElementById('main-container').appendChild(el);
+	next();
+}
 
 //lib superagent
 function loadPictures(ctx, next){
@@ -62,6 +69,10 @@ async function asyncLoad(ctx, next) {
     return console.log(arguments);
   }
 }
+
+setTimeout(function (){
+
+});
 
 /*var page = require('page');
 
