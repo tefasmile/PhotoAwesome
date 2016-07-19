@@ -6,14 +6,15 @@ import empty from 'empty-element';
 import header from '../header';
 
 
-page('/:username',header,loadUser,function(ctx, next){
+page('/:username',loadUser,header,function(ctx, next){
 	title(`PhotoAw - ${ctx.params.username}`);
     var main = document.getElementById('main-container');
     empty(main).appendChild(templateProfile(ctx.user));
+    $('.modal-trigger').leanModal();
 });
 
 //modal 
-page('/:username/:id',header,loadUser,function(ctx, next){
+page('/:username/:id',loadUser,header,function(ctx, next){
 	title(`PhotoAw - ${ctx.params.username}`);
     var main = document.getElementById('main-container');
     empty(main).appendChild(templateProfile(ctx.user));
@@ -34,6 +35,7 @@ async function loadUser (ctx, next) {
     console.log(err);
   }
 }
+
 
 
 

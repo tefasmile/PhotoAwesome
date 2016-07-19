@@ -7,13 +7,6 @@ var source = require('vinyl-source-stream');
 var watchify = require('watchify');
 var fs      = require('graceful-fs');
 
-//actualizar gulp
-gulp.task('npmUpdate', function(){
-	var update = require('gulp-update')();
-	gulp.watch('./package.json').on('change', function (file){
-		update.write(file);
-	});
-});
 
 gulp.task('styles', function(){
 	gulp
@@ -74,6 +67,5 @@ gulp.task('watch', function(){
 
 gulp.task('default', ['styles', 'assets', 'build']);
 
-//actualizar gulp
-gulp.task('update',['npmUpdate']);
+
 

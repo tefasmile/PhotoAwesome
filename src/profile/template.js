@@ -26,6 +26,7 @@ module.exports =  function (user){
 								<img src="${picture.src}" class="picture"/>
 								<div class="likes"><i class="fa fa-heart"></i>${picture.likes}</div>
 							</a>
+							<img src="${picture.src}" class="materialboxed" width="650">
 							<div id="modal${picture.id}" class="modal modal-fixed-footer">
 								<div class="modal-content">
 									<img src="${picture.src}"/>
