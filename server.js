@@ -82,32 +82,32 @@ app.get('/api/user/:username',function(req,res){
 		pictures: [
 			{
 				id: 1,
-				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/o4epw33wyxr.jpg&h=250&w=250',
+				src: 'http://66.media.tumblr.com/e48214f276a1d3e40e33fcd6226877a3/tumblr_nmt07cbBFE1ut18gco1_1280.jpg',
 				likes:3
 			},
 			{
 				id: 2,
-				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/gtlbgxgmyox.jpg&h=250&w=250',
+				src: 'https://c1.staticflickr.com/9/8020/7230566336_66deb4d4d4_b.jpg',
 				likes:10
 			},
 			{
 				id: 3,
-				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/gtlbgxgmyox.jpg&h=250&w=250',
+				src: 'https://pixabay.com/static/uploads/photo/2015/09/22/14/29/white-pony-951772_960_720.jpg',
 				likes:23
 			},
 			{
 				id: 4,
-				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/gtlbgxgmyox.jpg&h=250&w=250',
+				src: 'http://www.pandas-7.com/wp-content/uploads/2015/12/151209-osos-bebes-pandas-pardo-bebe-k74763-rojos-imagenes-ositos-rojos-imajen-fotografia-fotografia-foto.jpg',
 				likes:6
 			},
 			{
 				id: 5,
-				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/o4epw33wyxr.jpg&h=250&w=250',
+				src: 'http://www.imagexia.com/wp-content/uploads/2014/06/Leopardo-Felino.jpg',
 				likes:2
 			},
 			{
 				id: 6,
-				src: 'http://www.allforwall.net/reimg/resize-img.php?src=http://downimgs.allforwall.net/images/o4epw33wyxr.jpg&h=250&w=250',
+				src: 'https://www.recreoviral.com/wp-content/uploads/2014/06/bebe-castor.jpg',
 				likes:0
 			}
 		]

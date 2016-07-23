@@ -27,12 +27,12 @@ module.exports =  function (user){
 								<img src="${picture.src}" class="picture"/>
 								<div class="likes"><i class="fa fa-heart"></i>${picture.likes}</div>
 							</a>
-							<img src="${picture.src}" class="materialboxed" width="650">
 							<div id="modal${picture.id}" class="modal modal-fixed-footer">
 								<div class="modal-content">
-									<img src="${picture.src}"/>
+									<img class="image" src="${picture.src}"/>
 								</div>
 								<div class="modal-footer">
+									<p>Hello world</p>
 									<div class="btn btn-flat likes"><i class="fa fa-heart"></i> ${translate('likes', { likes: picture.likes })}</div>
 								</div>
 							</div>
