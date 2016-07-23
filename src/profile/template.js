@@ -1,6 +1,7 @@
 import yo from 'yo-yo';
 import layout from '../layout';
-import translate from '../translate';
+import { message as translate } from '../translate';
+
 
 module.exports =  function (user){
 		var templateProfile = yo`<div class="profile">
@@ -40,4 +41,4 @@ module.exports =  function (user){
 			</div>
 		</div>`;
 		return layout(templateProfile);
-}
+};
