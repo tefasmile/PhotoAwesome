@@ -253,7 +253,7 @@ $avatar-size: 48px;
 }
 
 .modal{
-  
+  text-align: center;
   .image img{
     max-height: 100%;
     max-width: 90%;
@@ -261,6 +261,10 @@ $avatar-size: 48px;
 
   .fa-heart{
     display: inline-block;
+  }
+
+  .lik{
+    color: purple;
   }
 }
 

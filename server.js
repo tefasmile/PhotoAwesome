@@ -108,7 +108,7 @@ app.get('/api/user/:username',function(req,res){
 			{
 				id: 6,
 				src: 'https://www.recreoviral.com/wp-content/uploads/2014/06/bebe-castor.jpg',
-				likes:0
+				likes:28
 			}
 		]
 	};

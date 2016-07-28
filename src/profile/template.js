@@ -7,16 +7,10 @@ module.exports =  function (user){
 		var templateProfile = yo`<div class="profile">
 		<div class="container">
 			<div class="row margin">
-				<div class="col s7 push-l4">
+				<div class="col s10 push-s2 m5 push-m4 l7 push-l4">
 					<img class="circle responsive-img" src="${user.avatar}">
 					<h2 class="flow-text hide-on-large-only center-align">${user.username}</h2>
 					<h2 class="hide-on-med-and-down left-align">${user.username}</h2>
-					<p class="leyend">Description del usuario perfil</p>
-					<div class="text">
-						<p class="text__item">100 publicaciones</p>
-						<p class="text__item">5.350 seguidores</p>
-						<p class="text__item">52 seguidos</p>
-					</div>
 				</div>
 				<div class="col s5 pull-s6"></div>
 			</div>
@@ -32,8 +26,7 @@ module.exports =  function (user){
 									<img class="image" src="${picture.src}"/>
 								</div>
 								<div class="modal-footer">
-									<p>Hello world</p>
-									<div class="btn btn-flat likes"><i class="fa fa-heart"></i> ${translate('likes', { likes: picture.likes })}</div>
+									<div class="lik"><i class="fa fa-heart"></i> ${translate('likes', { likes: picture.likes })}</div>
 								</div>
 							</div>
 					</div>`
